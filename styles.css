@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("./resources/Norse-Bold.otf");
+}
+a,
+a:link,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: lightseagreen;
+}
+
+.sidebar_container {
+  flex: 2;
+  border: 5px solid black;
+  background-image: url("./resources/sidebar.jpg");
+  background-size: cover;
+  color: white;
+  background-color: lightblue;
+}
+
+.sidebar_container > p {
+  position: relative;
+  bottom: calc(-100% + 40px);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.sidebar_container > .logo_section {
+  position: relative;
+  top: calc(22%);
+  text-align: center;
+  font-family: "Norse Bold";
+  font-size: 6rem;
+  background-color: rgba(90, 90, 90, 0.65);
+}
+
+.sidebar_container > .logo_section > * {
+  display: inline;
+  vertical-align: middle;
+}
+
+.main_container {
+  flex: 4;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.explainer_text {
+  padding-top: 120px;
+  background-color: rgba(162, 160, 160, 0.1);
+}
+
+.explainer_text > .explainer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.main_container > * {
+  flex: 1;
+  padding-right: 200px;
+  padding-left: 40px;
+}
