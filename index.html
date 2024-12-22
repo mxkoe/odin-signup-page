@@ -40,10 +40,43 @@
         </p>
       </div>
       <div class="submission_area">
+        <form action="/" method="get" class="input-container"></form>
         <p>Let's do this!</p>
+        <form>
+          <div class="input-container">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" id="firstName" name="firstName" />
+          </div>
+          <div class="input-container">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" id="lastName" name="lastName" />
+          </div>
+          <br />
+          <div class="input-container">
+            <label for="eMail">EMAIL</label>
+            <input type="text" id="eMail" name="eMail" />
+          </div>
+          <div class="input-container">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" />
+          </div>
+          <br />
+          <div class="input-container">
+            <label for="password1">PASSWORD</label>
+            <input type="password" id="password1" name="passwords" />
+          </div>
+          <div class="input-container">
+            <label for="password2">CONFIRM PASSWORD</label>
+            <input type="password" id="password2" name="passwords" />
+          </div>
+        </form>
       </div>
       <div class="button_area">
-        <p>Test</p>
+        <button class="createAccount">Create Account</button>
+        <p class="loginText">
+          Already have an account?
+          <a href="http://" target="_blank" rel="noopener noreferrer">Log in</a>
+        </p>
       </div>
     </div>
     <script src="scripts.js"></script>

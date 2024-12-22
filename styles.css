@@ -73,3 +73,44 @@ a:hover {
   padding-right: 200px;
   padding-left: 40px;
 }
+
+label {
+  display: block;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-bottom: 2px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+button {
+  display: inline-block;
+  border-color: #e5e7eb;
+  border-radius: 3px;
+  padding: 7px;
+  font-size: 14px;
+  gap: 5px;
+}
+
+.input-container {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.submission_area {
+  box-shadow: 0 8px 6px -6px black;
+  margin-bottom: 20px;
+}
+
+.loginText > a:link,
+a:visited {
+  color: black;
+}
+
+.button_area > .createAccount {
+  background-color: #596d48;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
