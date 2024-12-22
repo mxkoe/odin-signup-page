@@ -74,33 +74,54 @@ a:hover {
   padding-left: 40px;
 }
 
-label {
-  display: block;
-  font-weight: lighter;
-  font-size: 12px;
-  margin-bottom: 2px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.contact_Form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 90%;
+  justify-content: space-between;
 }
 
-input,
-button {
-  display: inline-block;
-  border-color: #e5e7eb;
+.form-row {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  background-color: #ffffff;
+  border: 1px solid #d6d9dc;
   border-radius: 3px;
+  width: 250px;
   padding: 7px;
   font-size: 14px;
-  gap: 5px;
 }
 
-.input-container {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+.form-row input:invalid {
+  border: 1px solid lightcoral;
+}
+
+.form-row input:valid {
+  border: 1px solid lightseagreen;
+}
+
+.form-row input:focus {
+  border: 1px solid blue;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .submission_area {
+  display: flex;
   box-shadow: 0 8px 6px -6px black;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .loginText > a:link,
@@ -113,4 +134,8 @@ a:visited {
   color: white;
   padding: 1rem;
   border-radius: 10px;
+}
+
+.button_area > .createAccount:hover {
+  background-color: #d55c5f;
 }
